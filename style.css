@@ -1,0 +1,709 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+#cinta{
+    background-color: #FAD9D0;
+}
+
+#cinta .logo{
+    margin: 0;
+    padding: 10px 50px;
+    color: #FCA4AA;
+    font-family: Redacted Script;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header{
+    background-color: #FFF1DA;
+}
+
+header .title{
+    margin: 0;
+    padding: 25px 90px;
+    color: #E29140;
+    font-family: 'Yeseva One', cursive;
+    font-size: 3.6em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header li{
+    position: relative;
+    padding: 5px 12px;
+}
+
+header li a{
+    color: #E29140;
+    font-family: 'Amiko', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none; 
+    transition: 0.3s ease; 
+}
+
+header li a:hover,
+header li a.active {
+    color:#218EAB; 
+}
+
+header li a.active::after,
+header li a:hover::after {
+    content: "";
+    width: 30%; 
+    height: 2px; 
+    background: #218EAB; 
+    position: absolute; 
+    bottom: 0;
+    left: 20px; 
+}
+
+#portada{
+    background-color: #FFF9EF;
+    position: relative;
+    padding: 60px 90px;
+    z-index: -2;
+}
+
+#portada .container{
+    padding: 100px 12px;
+}
+
+#portada .content-container{
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    color: #FCA4AA;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 0;
+
+}
+
+#portada .imagen-portada{
+    display: none;
+}
+
+#worm1{
+    position: absolute;
+    top: 2em;
+    right: 0;
+    z-index: -1;
+}
+
+#circulo1{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
+
+#circulo2{
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    z-index: -1;
+}
+
+#worm2{
+    position: absolute;
+    bottom: 3.6em;
+    left: -1em;
+    z-index: -1;
+}
+
+#productos{
+    background-color: #FAD9D0;
+    display: flex;
+    text-align: center;
+}
+
+#productos .container{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#productos h2{
+    margin-top: 0px;
+    color: #E29140;
+    font-family: 'Alata', sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.carta:first-child{
+    background-color: #FCA4AA;
+}
+
+.carta:nth-child(2){
+    background-color: #D9C8D7;
+}
+
+.carta:nth-child(3){
+    background-color: #E29140;
+}
+
+.carta{
+    padding: 40px;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+.carta a{
+    color: #FFF9EF;
+    font-family: 'Amiko', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: 0.3s ease;
+}
+
+.carta a:hover{
+    color:#218EAB; 
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FFF9EF;
+    color: #D26237;
+    font-family: 'Yeseva One', cursive;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#bienvenido{
+    background-color: #FFF9EF;
+}
+
+#bienvenido .imagen-bienvenido{
+    display: none;
+}
+
+#bienvenido .container{
+    text-align: center;
+    padding: 100px 50px;
+}
+
+#bienvenido h2{
+    color: #218EAB;
+    font-family: 'Alata', sans-serif;
+    font-size: 2.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#bienvenido p{
+    color: #E29140;
+    font-family: 'Amiko', sans-serif;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#contacto{
+    background-color: #FAD9D0;
+    display: flex;
+    text-align: center;
+}
+
+#contacto .container{
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto .logo{
+    color: #FCA4AA;
+    font-family: 'Redacted Script', cursive;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#contacto .contacto h2{
+    color: #E29140;
+    font-family: 'Alata', sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#contacto li{
+    position: relative;
+    padding-top: 20px;
+}
+
+#contacto li a{
+    color: #D26237;
+    font-family: 'Amiko', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: 0.3s ease;
+}
+
+#contacto li a:hover{
+    color:#218EAB; 
+}
+
+#contacto li a:hover::after {
+    content: "";
+    width: 30%; 
+    height: 2px; 
+    background: #218EAB; 
+    position: absolute; 
+    bottom: 0;
+    left: 20px; 
+}
+
+footer{
+    background-color: #FFF1DA;
+}
+
+footer .container{
+    margin: 0;
+    color: #E29140;
+    font-family: Amiko;
+    font-size: 0.6em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer a{
+    color: #E29140;
+    font-family: 'Amiko' , sans-serif;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px;
+    margin: 0;
+}
+
+#proyecto{
+    background: #FFF9EF;
+}
+
+#proyecto h2{
+    font-family: 'Alata', sans-serif;
+    color: #FCA4AA;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#proyecto p{
+    color: #218EAB;
+    font-family: 'Amiko' , sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: justify;
+    
+}
+
+#proyecto .image-container{
+    display: none;
+}
+
+#proyecto .container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#designs {
+    padding: 1px;
+    background: #FFF9EF;
+}
+
+#designs .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#designs .unidad-diseños a{
+    color: #218EAB;
+    font-family: 'Amiko' , sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+#designs h2{
+    color: #FCA4AA;
+    font-family: 'Alata', sans-serif;
+    font-size: 2.3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#designs h3{
+    color: #218EAB;
+    font-family: 'Amiko', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 1em;
+}
+
+#designs .fotos-diseños{
+    width: 280px;
+    height: auto;
+}
+
+#designs .unidad-diseños{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#designs .diseños{
+    margin-top: 25px;
+}
+
+#galeria{
+    background: #FFF9EF;
+    padding: 1px;
+}
+
+#galeria h2{
+    color: #FCA4AA;
+    font-family: 'Alata', sans-serif;
+    font-size: 2.3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#galeria .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+}
+
+#galeria h3{
+    color: #218EAB;
+    font-family: 'Amiko', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 1em;
+}
+
+#galeria img{
+    width: 100%;
+    padding: 25px;
+}
+
+#galeria .fotos{
+    padding-bottom: 25px;
+}
+
+@media screen and (min-width:768px){
+    #main{
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header ul{
+        padding-right: 40px;
+    }
+
+    header li{
+        display: inline-block;
+        
+    }
+
+    header nav{
+        padding-bottom: 0;
+        padding-top: 15px;
+    }
+
+    header .title{
+        padding-right: 0;
+    }
+
+    header a{
+        display: inline-block;
+    }
+
+    #portada .content-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #portada p{
+        padding-right: 30px;
+
+    }
+
+    #portada .imagen-portada{
+        margin-right: 500 px;
+        padding-left: 30 px;
+        width: 40vw;
+        height: auto;
+        display: block;
+        border-radius: 15px;
+    }
+
+    #productos .programas{
+        display: flex;
+    }
+    
+    #productos .carta{
+        flex-basis: calc(100% / 3);
+    }
+    #productos{
+        padding: 100px 0px;
+    }
+
+    #productos h2{
+        padding-bottom: 50px;
+    }
+
+    #bienvenido{
+        padding: 100px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #bienvenido .container{
+        display: flex;
+        margin: 0px 30px;
+        align-items: center;
+       
+
+    }
+
+    #bienvenido h2{
+        margin-top: 0px;
+    }
+
+    #bienvenido .texto{
+        width: 50%;
+        max-width: 400px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #bienvenido .imagen-bienvenido{
+        padding-left: 30 px;
+        width: 50vw;
+        height: auto;
+        display: block;
+        border-radius: 15px;
+    }
+
+    #contacto .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #contacto .logo{
+        padding-left: 30px;
+        font-size: 5em;
+    }
+
+    #contacto ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contacto li{
+        padding: 0px 30px;
+    }
+    
+    #contacto .contacto{
+        padding: 0px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #proyecto .imagen-proyecto{
+        width: 40vw;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    #proyecto .image-container{
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #proyecto .image-container a{
+        color: #218EAB;
+        font-family: 'Amiko' , sans-serif;
+        font-size: 0.5em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 5px;
+    }
+    #proyecto .primer-parrafo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #proyecto .bienvenido-parrafo{
+        max-width: 600px;
+        padding-right: 50px;
+    }
+
+    #proyecto h2{
+        text-align: initial;
+        padding: 0 40px;
+    }
+    
+    #proyecto p{
+        padding-left: 40px;
+    }
+
+    #designs .diseños{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+        margin-top: 0;
+        padding-top: 25px;
+    }
+
+    #designs h2{
+        display: flex;
+        text-align: left;
+        padding-left: 90px;
+        
+    }
+
+    #galeria .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    #galeria h2{
+        display: flex;
+        text-align: left;
+        padding-left: 90px;
+    }
+
+    h3{
+        display: flex;
+        text-align: left;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .intro{
+        max-width: 900px;
+    }
+
+    #galeria .fotos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 10px;
+        margin-top: 0;
+        padding: 25px 80px;
+        padding-bottom: 70px;
+       
+    }
+
+    #galeria img{
+        padding: 10px;
+    }
+}
